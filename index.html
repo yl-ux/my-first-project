@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>个人网页 - 张三</title>
+    <meta name="description" content="张三 — 前端工程师，构建响应式、可访问的 Web 应用。查看项目、联系我或了解我的技术栈。">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="前端, JavaScript, React, Vue, Web 开发, 张三">
+    <link rel="canonical" href="https://yl-ux.github.io/个人网页/">
+    <!-- Open Graph -->
+    <meta property="og:title" content="个人网页 - 张三">
+    <meta property="og:description" content="前端工程师 · 开源爱好者 · 构建高性能、可访问的 Web 应用。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yl-ux.github.io/个人网页/">
+    <meta property="og:locale" content="zh_CN">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="个人网页 - 张三">
+    <meta name="twitter:description" content="前端工程师 · 开源爱好者 · 构建高性能、可访问的 Web 应用。">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+
+    <!-- 结构化数据（JSON-LD）: 请将 "https://your-domain.com" 替换为你实际域名 -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "url": "https://yl-ux.github.io/个人网页/",
+            "name": "张三",
+            "description": "张三 的个人网页 — 前端工程师与开源贡献者。",
+            "creator": {
+                "@type": "Person",
+                "name": "张三",
+                "email": "mailto:zhangsan@example.com"
+            }
+        }
+        </script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="logo">张三</h1>
+            <nav class="nav">
+                <a href="#about">关于</a>
+                <a href="#projects">项目</a>
+                <a href="#contact">联系</a>
+                <button id="themeToggle" aria-label="切换主题">🌙</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>你好，我是张三</h2>
+                <p class="lead">前端工程师 · 开源爱好者 · 喜欢把想法变成立即可用的产品</p>
+                <p>
+                    <a class="cta" href="#contact">与我联系</a>
+                </p>
+            </div>
+        </section>
+
+        <section id="about" class="container about">
+            <h3>关于我</h3>
+            <p>我专注于构建易用、响应式的 web 应用。熟悉 HTML、CSS、JavaScript，以及 React / Vue 等框架。平时喜欢阅读技术博客并贡献开源。</p>
+            <ul class="meta">
+                <li>地点：北京</li>
+                <li>邮箱：<a href="mailto:zhangsan@example.com">zhangsan@example.com</a></li>
+                <li>技术栈：HTML · CSS · JavaScript · React</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="container projects">
+            <h3>项目</h3>
+            <div class="grid">
+                <article class="card">
+                    <h4>项目 A</h4>
+                    <p>一个基于 React 的笔记应用，具有离线功能与实时搜索。</p>
+                    <p class="muted">技术：React · IndexedDB</p>
+                </article>
+                <article class="card">
+                    <h4>项目 B</h4>
+                    <p>可视化仪表盘，支持拖拽与自定义图表。</p>
+                    <p class="muted">技术：D3 · TypeScript</p>
+                </article>
+                <article class="card">
+                    <h4>项目 C</h4>
+                    <p>一个小巧的静态博客框架，专注于性能与可访问性。</p>
+                    <p class="muted">技术：Vanilla JS · SSR</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="container contact">
+            <h3>联系我</h3>
+            <p>欢迎通过邮件或下面的表单与我联系（此表单仅做前端演示，不会发送邮件）。</p>
+            <form id="contactForm">
+                <label>
+                    名称<br>
+                    <input type="text" id="name" required>
+                </label>
+                <label>
+                    邮箱<br>
+                    <input type="email" id="email" required>
+                </label>
+                <label>
+                    信息<br>
+                    <textarea id="message" rows="5" required></textarea>
+                </label>
+                <div class="form-actions">
+                    <button type="submit">发送</button>
+                </div>
+                <p id="formMsg" class="form-msg" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2025 张三 · <a href="#">隐私</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
